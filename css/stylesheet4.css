@@ -18,8 +18,9 @@
 position: relative;    
 }
 
-#myDIV {
-    overflow-y: scroll;
+.scroll {
+    height: 70vh;
+     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 
