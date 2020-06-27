@@ -239,7 +239,7 @@ background-color: white;
 }
 
 @media (min-width: 330px) {
-    .full_card {
+    .fullcard {
         display: none;
     }
 }
