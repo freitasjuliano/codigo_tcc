@@ -181,8 +181,13 @@ border-bottom: 2px solid #95847c;
     border-radius: 0 !important;
 }
 
+.container-grid {
+    max-width: 80vw;
+}
+
 .content-grid {
     justify-content: center;
+    max-width: 80vw;
 }
 
 .inside {
@@ -275,6 +280,7 @@ h5 {
 
 .content-grid {
         display: grid;
+        max-width: 80vw;
         justify-self: center;
         grid-template-columns: 1.4fr 1fr;
         grid-template-rows:  200px 250px;
@@ -299,10 +305,12 @@ h5 {
 @media (min-width: 1024px) {
     .content-grid {
         display: grid;
+        max-width: 80vw;
+        max-height: 500px;
         justify-self: center;
         margin-bottom: 90px;
-        grid-template-columns: 800px 300px;
-        grid-template-rows:  400px 170px;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr;
         grid-template-areas: 
           "photo list"
           "descr list"
