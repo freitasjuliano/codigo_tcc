@@ -20,9 +20,9 @@
 
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark ">
-        <a class="navbar-brand d-none d-lg-block">
+      <!--  <a class="navbar-brand d-none d-lg-block">
             <img src="../images/tipo-logo.png">
-        </a>
+        </a> -->
         <span class="navbar-text justify-content-center"> 53º FBCB</span>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <span class="navbar-toggler-icon"></span>
@@ -31,33 +31,31 @@
         <div class="collapse navbar-collapse" id="collapse_target">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Link 1</a>
+                    <a class="nav-link" href="#sobre"> Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Link 2</a>
+                    <a class="nav-link" href="#" > Programação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Link 3</a>
+                    <a class="nav-link" href="#"> Notícias</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-11 section1">
+        <div class="row d-flex flex-column flex-md-row ">
+            <div class=" col-11  section1 order-md-1 col-md-6 mt-lg-0">
                 <div class="row">
-                    <div class="col-10 section11">
+                    <div class="col-10 section11 ml-md-0 mr-md-0">
                             <img src="../images/triste_tropico.png" class="img-fluid position-absolute">      
                     </div>
                 </div>     
             </div>
-        </div>
-                
-        <div class="row">
-            <div class="col section2 mb-4">
+
+            <div class="col section2 mb-4 order-md-0 col-md-6">
                 <div class="row">
-                    <div class="col-11">
+                    <div class="col-11 pl-md-5 ">
                         <h3 class="titulo"><span class="yellow">53º</span> FESTIVAL <br>DE BRASÍLIA<br>
                         DO CINEMA<br> BRASILEIRO</h3>
                         <h4 class="data"> 18 - 25 setembro 20'</h4>
@@ -65,40 +63,109 @@
                     </div>
                 </div>  
             </div>
-        </div>  
+        </div>   
 
-        <div class="row">
-            <div class="col mb-5 mt-4">
+        <div class="row" >
+            <div class="col mb-5 mt-5">
                 <div class="row">
-                    <div class="col">
-                        <h3>SOBRE</h3>
-                        <div class="embed-responsive embed-responsive-16by9">
+                    <div class="col col-sobre">
+                        <h3 class="text-md-center mb-md-3" id="sobre">SOBRE</h3>
+                        <div class="embed-responsive embed-responsive-16by9 text-center mx-auto">
                             <video class="embed-responsive-item " source src="../video/video.mp4" controls id="#reveal1" width="1280" height="720"></video>
-                        </div>
-                        <blockquote>Essa edição do Festival se preza a refletir sobre o papel do cinema nas <span class="yellow">diversas representações culturais</span> do povo brasileiro na construção de uma identidade verdadeiramente nacional.</blockquote>
+                        </div> 
+                        <h6 class="text-md-center container col-md-10 description text-uppercase pl-0 mt-4">Essa edição do Festival se preza a refletir sobre o papel do cinema nas <span class="yellow">diversas representações culturais</span> do povo brasileiro na construção de uma identidade verdadeiramente nacional. <br> Para isso, </h6>
                     </div>
                 </div>
             </div>
         </div>
-
+<!--
         <div class="row">
-            <div class="col mt-4 white">
-                <h3 class="programação-title">PROGRAMAÇÃO</h3>
+            <div class="col-md-12 col-lg-8" style="height: 490px;">
+                <div class="card flex-md-row mb-4">
+                    <div class="col-8 pl-0 pr-0" style=" background-color: #f2f2f2;">
+                        <img class="card-img" id="image_swap" data-src="holder.js/200x250?theme=thumb" alt="" src="../images/veroes.jpg"  data-holder-rendered="true">
+                        <div class="card-body" style="background-color: whitesmoke;" >
+                            <h5 class="card-title" id="title_swap">Ilha das Flores</h5>
+                            <p class="card-text"><small class="text-muted mb-6" id="info_swap">Documentário - 15 min - Jorge Furtado</small></p>
+                            <p class="card-text" id="text_swap">Um tomate é plantado, colhido, transportado e vendido num supermercado, mas apodrece e acaba no lixo. O filme segue-o até seu verdadeiro final e então fica clara a diferença que existe entre tomates, porcos e seres humanos.</p> 
+                        </div>    
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-start list-bg" style="height: 490px; padding: 0;" >
+                        <div class="list-group" style="overflow: scroll;" id=" myDIV">
+                            <a class="list-group-item"><h5>Set 18, 2020</h5></a>
+                            <a class="list-group-item active act">19h30 - Ilha das Flores</a>
+                            <a onclick="change_text()" class=" list-group-item act">19h50 - Di</a>
+                            <a onclick="change_text2()" class=" list-group-item act">20h10 - Fim de Festa</a>
+                            <a></a>
+
+                            <a class="list-group-item" ><h5>Set 19, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text3()">19h30 - Blábláblá</a>
+                            <a class="list-group-item act" onclick="change_text4()">19h50 - SuperOutro</a>
+                            <a class="list-group-item act" onclick="change_text5()">20h10 - O Beijo no Asfalto</a>
+                            <a></a>
+
+                            <a class="list-group-item act"><h5>Set 20, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text6()">19h30 - Alma no Olho</a>
+                            <a class="list-group-item act" onclick="change_text7()">19h50 - Vinil Verde</a>
+                            <a class="list-group-item act" onclick="change_text8()">20h10 - Macabro</a>
+                            <a></a>
+
+                            <a class="list-group-item" ><h5>Set 21, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text9()">19h30 - Recife Frio</a>
+                            <a class="list-group-item act" onclick="change_text10()">19h50 - Guaxuma</a>
+                            <a class="list-group-item act" onclick="change_text11()">20h10 - Breve Miragem do Sol</a>
+                            <a></a>
+
+                            <a class="list-group-item"><h5>Set 22, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text12()">19h30 - Eletrodoméstica</a>
+                            <a class="list-group-item act" onclick="change_text13()">19h50 - Quintal</a>
+                            <a class="list-group-item act" onclick="change_text14()">20h10 - Aos Nossos Filhos</a>
+                            <a></a>
+
+                            <a class="list-group-item act"><h5>Set 23, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text15()">19h30 - Dias de Greve</a>
+                            <a class="list-group-item act" onclick="change_text16()">19h50 - Estado Itinerante</a>
+                            <a class="list-group-item act" onclick="change_text17()">20h10 - Marighella</a>
+                            <a></a>
+
+                            <a class="list-group-item"><h5>Set 24, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text18()">19h30 - Torre</a>
+                            <a class="list-group-item act" onclick="change_text19()">19h50 - Guida</a>
+                            <a class="list-group-item act" onclick="change_text20()">20h10 - Três Verôes</a>
+                            <a></a>
+
+                            <a class="list-group-item"><h5>Set 25, 2020</h5></a>
+                            <a class="list-group-item act" onclick="change_text21()">19h30 - Ilha das Flores</a>
+                            <a class="list-group-item act" onclick="change_text22()">19h50 - Di</a>
+                            <a class="list-group-item act" onclick="change_text23()">20h10 - Fim de Festa</a>
+                        </div>
+
+
+                </div>
+                
+                </div>
             </div>
         </div>
-    
-        <div class="row">
-            <div class="col  flex-row" style="background-color: #ffffff;">
+  -->      
+
+    <div class="row">
+        <div class="col mt-4 text-md-center white">
+            <h3 class="programação-title">PROGRAMAÇÃO</h3>
+        </div>
+    </div>    
+
+        <div class="row d-md-none">
+            <div class="col flex-row" style="background-color: white;">
                 <div class="card-deck">
                     <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
 
                         <div class="card">
                       
                           <div class="card-header" role="tab" id="headingTwo1">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-                              aria-expanded="false" aria-controls="collapseTwo1">
-                              <h5 class="mb-0">
-                                Set 18, 2020 <i class="fas fa-angle-down rotate-icon"></i>
+                            <a class="collapsed d-block " data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                            aria-expanded="false" aria-controls="collapseTwo1">
+                              <h5 class="mb-0 d-block d-flex  justify-content-between">
+                                Set 18, 2020 <i class="fas fa-angle-down rotate-icon "></i>
                               </h5>
                             </a>
                           </div>
@@ -107,9 +174,9 @@
                           <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
                             data-parent="#accordionEx1">
                             <div class="card-body ">
-                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#glassAnimals">19h30 - Ilha das Flores</h5>
-                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#Di">20h- Di</h5>
-                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#fim">22h - Fim de Festa</h5>
+                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#glassAnimals">19h30 | Ilha das Flores</h5>
+                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#Di">20h | Di</h5>
+                                <h5 class="card-title text-primary inside" data-toggle="modal" data-target="#fim">22h | Fim de Festa</h5>
                             </div>
                           </div>
                       
@@ -174,7 +241,7 @@
                           <div class="card-header" role="tab" id="headingTwo2">
                             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
                               aria-expanded="false" aria-controls="collapseTwo21">
-                              <h5 class="mb-0">
+                              <h5 class="mb-0 d-block d-flex  justify-content-between">
                                 Set 19, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                               </h5>
                             </a>
@@ -193,8 +260,7 @@
                         </div>
                         <!-- Accordion card -->
 
-                        
-        <div class="modal fade" id="bla" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="bla" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -209,9 +275,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+                        </div>
 
-        <div class="modal fade" id="super" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="super" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -226,9 +292,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+                        </div>
 
-        <div class="modal fade" id="bjo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="bjo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -243,7 +309,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+                        </div>
                       
                         <!-- Accordion card -->
                         <div class="card">
@@ -252,7 +318,7 @@
                           <div class="card-header" role="tab" id="headingThree31">
                             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
                               aria-expanded="false" aria-controls="collapseThree31">
-                              <h5 class="mb-0">
+                              <h5 class="mb-0 d-block d-flex  justify-content-between">
                                 Set 20, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                               </h5>
                             </a>
@@ -327,7 +393,7 @@
                             <div class="card-header" role="tab" id="headingThree41">
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree41"
                                 aria-expanded="false" aria-controls="collapseThree41">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0 d-block d-flex  justify-content-between">
                                   Set 21, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                                 </h5>
                               </a>
@@ -401,7 +467,7 @@
                             <div class="card-header" role="tab" id="headingThree51">
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree51"
                                 aria-expanded="false" aria-controls="collapseThree51">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0 d-block d-flex  justify-content-between">
                                   Set 22, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                                 </h5>
                               </a>
@@ -475,7 +541,7 @@
                             <div class="card-header" role="tab" id="headingThree61">
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree61"
                                 aria-expanded="false" aria-controls="collapseThree61">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0 d-block d-flex  justify-content-between">
                                   Set 23, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                                 </h5>
                               </a>
@@ -549,7 +615,7 @@
                             <div class="card-header" role="tab" id="headingThree71">
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree71"
                                 aria-expanded="false" aria-controls="collapseThree71">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0 d-block d-flex  justify-content-between">
                                   Set 24, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                                 </h5>
                               </a>
@@ -623,7 +689,7 @@
                             <div class="card-header" role="tab" id="headingThree81">
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree81"
                                 aria-expanded="false" aria-controls="collapseThree81">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0 d-block d-flex  justify-content-between">
                                   Set 25, 2020 <i class="fas fa-angle-down rotate-icon"></i>
                                 </h5>
                               </a>
@@ -639,55 +705,125 @@
                         
                           </div>
                       
-                      </div>
+                    </div>
                       <!-- Accordion wrapper -->
                 </div>
             </div>
+            
         </div>
 
-        <div class="row row3">
-            <div class="col">
-                <h3>NOTÍCIAS</h3>
-                <div class="row">
-                    <div class="col">
-                        <div class="col card-deck px-0">
-                            <div class="card border-0">
-                                <img class="card-img-top" src="../images/ador.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+        <div class="row d-none d-md-flex justify-content-center" style="background-color: #ffffff;" >
+            <div class="col-10 mb-5 mt-5  ">
+                    <div class="content-grid" >
+                                <img class="card-img" id="image_swap" alt="" src="../images/veroes.jpg" style="grid-area: photo;">
+                                <div class="card-body" style="background-color: whitesmoke; grid-area: descr;" >
+                                    <h5 class="card-title" id="title_swap">Ilha das Flores</h5>
+                                    <p class="card-text"><small class="text-muted mb-6" id="info_swap">Documentário - 15 min - Jorge Furtado</small></p>
+                                    <p class="card-text" id="text_swap">Um tomate é plantado, colhido, transportado e vendido num supermercado, mas apodrece e acaba no lixo. O filme segue-o até seu verdadeiro final e então fica clara a diferença que existe entre tomates, porcos e seres humanos.</p> 
+                                </div>    
+                                    <div class="list-group" style="overflow: auto;grid-area: list; padding: 0;" id=" myDIV">
+                                        <a class="list-group-item list-header"><h5 class="mb-0">Set 18, 2020</h5></a>
+                                        <a class="list-group-item active act">19h30 - Ilha das Flores</a>
+                                        <a onclick="change_text()" class=" list-group-item act">19h50 - Di</a>
+                                        <a onclick="change_text2()" class=" list-group-item act">20h10 - Fim de Festa</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class="mb-0">Set 19, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text3()">19h30 - Blábláblá</a>
+                                        <a class="list-group-item act" onclick="change_text4()">19h50 - SuperOutro</a>
+                                        <a class="list-group-item act" onclick="change_text5()">20h10 - O Beijo no Asfalto</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class=" mb-0">Set 20, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text6()">19h30 - Alma no Olho</a>
+                                        <a class="list-group-item act" onclick="change_text7()">19h50 - Vinil Verde</a>
+                                        <a class="list-group-item act" onclick="change_text8()">20h10 - Macabro</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class="mb-0">Set 21, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text9()">19h30 - Recife Frio</a>
+                                        <a class="list-group-item act" onclick="change_text10()">19h50 - Guaxuma</a>
+                                        <a class="list-group-item act" onclick="change_text11()">20h10 - Breve Miragem do Sol</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class="mb-0">Set 22, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text12()">19h30 - Eletrodoméstica</a>
+                                        <a class="list-group-item act" onclick="change_text13()">19h50 - Quintal</a>
+                                        <a class="list-group-item act" onclick="change_text14()">20h10 - Aos Nossos Filhos</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class=" mb-0">Set 23, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text15()">19h30 - Dias de Greve</a>
+                                        <a class="list-group-item act" onclick="change_text16()">19h50 - Estado Itinerante</a>
+                                        <a class="list-group-item act" onclick="change_text17()">20h10 - Marighella</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class="mb-0">Set 24, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text18()">19h30 - Torre</a>
+                                        <a class="list-group-item act" onclick="change_text19()">19h50 - Guida</a>
+                                        <a class="list-group-item act" onclick="change_text20()">20h10 - Três Verôes</a>
+                                        <a></a>
+    
+                                        <a class="list-group-item list-header"><h5 class=" mb-0">Set 25, 2020</h5></a>
+                                        <a class="list-group-item act" onclick="change_text21()">19h30 - Ilha das Flores</a>
+                                        <a class="list-group-item act" onclick="change_text22()">19h50 - Di</a>
+                                        <a class="list-group-item act" onclick="change_text23()">20h10 - Fim de Festa</a>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="card border-0">
-                                <img class="card-img-top" src="../images/ador.jpg" alt="Card image cap">
+                         
+                        
+
+        </div>
+
+        <div class="row">
+            <div class="col dark text-md-center">
+                <h3 class="noticias-title ">NOTÍCIAS</h3>
+            </div>
+        </div>    
+
+                <div class="row">
+                    <div class="col">
+                        <div class="col card-deck px-0 mx-0 justify-content-center ">
+
+                            <div class="card border-0  col-lg-4 px-0">
+                                <img class="card-img-top" src="../images/youtube.png" alt="Card image cap">
                                 <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Assista de onde estiver</h5>
                                 </div>
                             </div>
+
+                            <div class="card border-0  col-lg-4 px-0">
+                                <img class="card-img-top" src="../images/marighella.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Marighella</h5>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
         <div class="row">
-            <div class="col col-button">
+            <div class="col col-button ">
                 <div class="row">
-                    <div class="col text-center mb-4 mt-2">
-                        <button type="button" class="btn btn-outline button2"><b>mais notícias</b></button>
+                    <div class="col text-center mb-4 mt-5">
+                        <button type="button" class="btn btn-outline button2" onclick="add_more" id="loadMore"><b>mais notícias</b></button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col mb-4" style="background-color: #d5d5d5;">
+            <div class="col4 col-lg-12" style="background-color: #d5d5d5;">
                 <div class="row">
-                    <div class="col">
+                    <div class="col text-center pl-3 pr-3  col-md-10 mx-auto">
                         <h4 class="news-title">Newsletter</h4>
                         <h5>Promoções, ingressos e muito mais
                             sobre o festival em nossa news.</h5>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 pl-3 pr-3 col-md-8 mx-auto">
                             <input type="email" class="form-control" id="input1" placeholder="name@example.com"  aria-label="Recipient's username" aria-describedby="button-addon2">
                             <div class="input-group-append">
                               <button class="btn btn-info" type="button" id="button-addon2">Assine</button>
@@ -697,116 +833,98 @@
                 </div>
             </div>
         </div>
-
-        
-
-        
-
+ 
+<div class="row">
+    <div class="col-12 pl-0 pr-0">
     <!-- Footer -->
-<footer class="page-footer font-small" style="background-color: #d5d5d5;">
+        <footer class="page-footer font-small px-0" style="background-color: white;">
+            <div style="background-color: #95847c;">
+            </div>
+        
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left pt-2 footer-body">
+        
+            <!-- Grid row -->
+            <div class="row mt-3">
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4 mt-md-2">
+        
+                <!-- Content -->
+                <img src="../images/logo_footer_black.png" alt="logo" class="img-fluid col-10">
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        
+                </div>
+                <!-- Grid column -->
+            
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold col-sm-12">Links úteis</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">Sobre</a>
+                </p>
+                <p>
+                    <a href="#!">Notícias</a>
+                </p>
+                <p>
+                    <a href="#!">Cadastre-se</a>
+                </p>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold col-sm-12">Contato</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
-    <div style="background-color: #95847c;">
-      <div class="container mt-5">
-  
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-  
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0" style="color: #292929;">Fique atualizado e siga-nos em nossas redes!</h6>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right ">
-  
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f white-text mr-4" style="color: #292929;"></i>
-            </a>
-
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram white-text" style="color: #292929;"></i>
-            </a>
-  
-          </div>
-          <!-- Grid column -->
-  
-        </div>
-        <!-- Grid row-->
-  
-      </div>
-    </div>
-  
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-2">
-  
-      <!-- Grid row -->
-      <div class="row mt-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-  
-          <!-- Content -->
-          <img src="../images/logo_footer_black.png" alt="logo" class="img-fluid">
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-  
-        </div>
-        <!-- Grid column -->
-    
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Links úteis</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a href="#!">Sobre</a>
-          </p>
-          <p>
-            <a href="#!">Notícias</a>
-          </p>
-          <p>
-            <a href="#!">Cadastre-se</a>
-          </p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-  
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Contato</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-
-          <p>
-            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-         
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
+                <p>
+                    <i class="fab fa-facebook-f white-text mr-4" style="color: #292929;"></i> info@example.com</p>
+                <p>
+                    <i class="fab fa-instagram white-text mr-4" style="color: #292929;"></i> + 01 234 567 88</p>
+                
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+            </div>
+            <!-- Footer Links -->
+        
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> 53º FBCB</a>
+            </div>
+            <!-- Copyright -->
+        
+        </footer>
   <!-- Footer -->
+    </div>
+</div>
 
 
     </div>
-        <script src="../js/update.js"></script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var btns = document.getElementsByClassName("act");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
+    
+    <script src="../js/update.js"></script>
+    <script src="../js/swapping.js"></script>
+    <script src="../js/load_more.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
