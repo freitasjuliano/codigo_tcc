@@ -18,9 +18,12 @@
 position: relative;    
 }
 
-.scroll {
+.over {
+    min-height: 101%;
+}
+.scroll {   
     height: 70vh;
-     overflow-y: scroll;
+     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 
