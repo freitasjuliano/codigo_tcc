@@ -18,6 +18,10 @@
 position: relative;    
 }
 
+#myDIV {
+    -webkit-overflow-scrolling: touch;
+}
+
 .embed-responsive-item {
     height: 100%;
     position: relative !important;
