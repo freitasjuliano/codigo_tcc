@@ -247,6 +247,13 @@ background-color: white;
 
 @media (min-width: 768px) {
 
+    .fullcard {
+        display: flex;
+        
+    }
+    
+    
+    
     .flex-column {
         background-color: #95847c;
     }
