@@ -33,6 +33,13 @@ function change_text5() {
     document.getElementById('image_swap').src="../images/bjo.png";
 }
 
+function change_text20() {
+    document.getElementById("title_swap").innerHTML = "Ilha das Flores";
+    document.getElementById("info_swap").innerHTML = "Documentário - 15 min - Jorge Furtado";
+    document.getElementById("text_swap").innerHTML = " Um tomate é plantado, colhido, transportado e vendido num supermercado, mas apodrece e acaba no lixo. O filme segue-o até seu verdadeiro final e então fica clara a diferença que existe entre tomates, porcos e seres humanos";
+    document.getElementById('image_swap').src="../images/flores.jpg";
+}
+
 function change_text6() {
     document.getElementById("title_swap").innerHTML = "Alma no olho";
     document.getElementById("info_swap").innerHTML = "Drama - 11min - Zózimo Bulbul";
