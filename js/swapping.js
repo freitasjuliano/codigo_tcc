@@ -33,13 +33,6 @@ function change_text5() {
     document.getElementById('image_swap').src="../images/bjo.png";
 }
 
-function change_text20() {
-    document.getElementById("title_swap").innerHTML = "Ilha das Flores";
-    document.getElementById("info_swap").innerHTML = "Documentário - 15 min - Jorge Furtado";
-    document.getElementById("text_swap").innerHTML = " Um tomate é plantado, colhido, transportado e vendido num supermercado, mas apodrece e acaba no lixo. O filme segue-o até seu verdadeiro final e então fica clara a diferença que existe entre tomates, porcos e seres humanos";
-    document.getElementById('image_swap').src="../images/flores.jpg";
-}
-
 function change_text6() {
     document.getElementById("title_swap").innerHTML = "Alma no olho";
     document.getElementById("info_swap").innerHTML = "Drama - 11min - Zózimo Bulbul";
@@ -97,43 +90,50 @@ function change_text13() {
 }
 
 function change_text14() {
-    document.getElementById("title_swap").innerHTML = "Dias de Greve";
-    document.getElementById("info_swap").innerHTML = "Ficção - 24min - Adirley Queirós";
-    document.getElementById("text_swap").innerHTML = "Uma greve de serralheiros é deflagrada em Ceilândia (DF), cidade próxima à Capital Federal.";
-    document.getElementById('image_swap').src="../images/quintal.png";
+    document.getElementById("title_swap").innerHTML = "Aos Nossos Filhos";
+    document.getElementById("info_swap").innerHTML = "Drama - 1h47m - Maria de Medeiros";
+    document.getElementById("text_swap").innerHTML = "Vera é uma mãe dedicada, divorciada após três casamentos e vive em uma família grande que inclui seus filhos e enteados.";
+    document.getElementById('image_swap').src="../images/filhos.jpg";
 }
 
-function change_text15() {
+function change_text16() {
     document.getElementById("title_swap").innerHTML = "Estado Itinerante";
     document.getElementById("info_swap").innerHTML = "Drama - 25min - Ana Carolina Soares";
     document.getElementById("text_swap").innerHTML = "Vivi, uma cobradora de ônibus, quer escapar de uma relação opressora. Entre as paradas no ponto final, os encontros com outras mulheres fortalecem a trabalhadora e seu desejo de fuga.";
     document.getElementById('image_swap').src="../images/estado.png";
 }
 
-function change_text16() {
+function change_text17() {
     document.getElementById("title_swap").innerHTML = "Marighella";
     document.getElementById("info_swap").innerHTML = "Drama - 2h35 - Wagner Moura";
     document.getElementById("text_swap").innerHTML = "Conheça a história de Carlos Marighella, assassinado pela ditadura militar e que deixou um legado que se estendeu por diversas gerações.";
     document.getElementById('image_swap').src="../images/mari.png";
 }
 
-function change_text17() {
+function change_text18() {
     document.getElementById("title_swap").innerHTML = "Torre";
     document.getElementById("info_swap").innerHTML = "Aventura - 19min - Nádia Mangolini";
     document.getElementById("text_swap").innerHTML = "Quatro irmãos, filhos de Virgílio Gomes da Silva, o primeiro desaparecido político da ditadura militar brasileira, relatam suas infâncias durante o regime.";
     document.getElementById('image_swap').src="../images/torre.png";
 }
 
-function change_text18() {
+function change_text19() {
     document.getElementById("title_swap").innerHTML = "Guida";
     document.getElementById("info_swap").innerHTML = "Drama - 12min - Nádia Rosana Urbes";
     document.getElementById("text_swap").innerHTML = "Uma senhora que há anos trabalha como arquivista, tem sua rotina modificada quando decide posar como modelo vivo.";
     document.getElementById('image_swap').src="../images/guida.png";
 }
 
-function change_text19() {
+function change_text20() {
     document.getElementById("title_swap").innerHTML = "Três Verões";
     document.getElementById("info_swap").innerHTML = "Drama/Comédia - 1h34 - Sandra Kogut";
     document.getElementById("text_swap").innerHTML = " A cada verão, entre Natal e Ano Novo, o casal Edgar e Marta recebe amigos e família na sua mansão à beira mar. Em 2015 tudo parece ir bem, mas em 2016 a mesma festa é cancelada.  Madá, a empregada responsável por toda a administração doméstica, vivência a decadência do casal, vítimas do sonho neoliberal.";
     document.getElementById('image_swap').src="../images/tres.png";
+}
+
+function change_text21() {
+    document.getElementById("title_swap").innerHTML = "Ilha das Flores";
+    document.getElementById("info_swap").innerHTML = "Documentário - 15 min - Jorge Furtado";
+    document.getElementById("text_swap").innerHTML = " Um tomate é plantado, colhido, transportado e vendido num supermercado, mas apodrece e acaba no lixo. O filme segue-o até seu verdadeiro final e então fica clara a diferença que existe entre tomates, porcos e seres humanos";
+    document.getElementById('image_swap').src="../images/flores.jpg";
 }
