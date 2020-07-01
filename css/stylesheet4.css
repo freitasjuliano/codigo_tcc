@@ -377,7 +377,7 @@ h5 {
     height: 100vh;
     }
     
- #myDIV {
+ .scroll {
      height: 80vh;
     }
     
