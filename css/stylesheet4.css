@@ -373,6 +373,9 @@ h5 {
     font-weight: 600;
 }
 
+.fullcard {
+    height: 100vh;
+    
 #sobre {
     font-size: 45px;
 }
