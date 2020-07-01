@@ -375,6 +375,11 @@ h5 {
 
 .fullcard {
     height: 100vh;
+    }
+    
+ #myDIV {
+     height: 80vh;
+    }
     
 #sobre {
     font-size: 45px;
